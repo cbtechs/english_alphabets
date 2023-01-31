@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/stlye.css" />
+    <style>
+      table,
+      td,
+      th {
+        border: 2px solid purple;
+        border-collapse: collapse;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* first color in row */
+      #row1 > td:nth-child(odd) {
+        background-color: blue;
+      }
+      #row2 > td:nth-child(even) {
+        background-color: green;
+      }
+      #row3 > td:nth-child(odd) {
+        background-color: red;
+      }
+      #row4 :nth-child(even) {
+        background-color: purple;
+      }
+
+      /* second color in row */
+      #row1 > td:nth-child(2n) {
+        background-color: crimson;
+      }
+      #row2 > td:nth-child(odd) {
+        background-color: yellow;
+      }
+      #row3 > td:nth-child(2n) {
+        background-color: grey;
+      }
+      #row4 > :nth-child(odd) {
+        background-color: lime;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="5">English Alphabets</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="row1">
+          <td>
+            <dd>A</dd>
+          </td>
+          <td>
+            <dd>B</dd>
+          </td>
+          <td>
+            <dd>C</dd>
+          </td>
+          <td>
+            <dd>D</dd>
+          </td>
+          <td>
+            <dd>E</dd>
+          </td>
+        </tr>
+        <tr id="row2">
+          <td>
+            <dd>F</dd>
+          </td>
+          <td>
+            <dd>G</dd>
+          </td>
+          <td>
+            <dd>H</dd>
+          </td>
+          <td>
+            <dd>I</dd>
+          </td>
+          <td>
+            <dd>J</dd>
+          </td>
+        </tr>
+        <tr id="row3">
+          <td>
+            <dd>K</dd>
+          </td>
+          <td>
+            <dd>L</dd>
+          </td>
+          <td>
+            <dd>M</dd>
+          </td>
+          <td>
+            <dd>N</dd>
+          </td>
+          <td>
+            <dd>O</dd>
+          </td>
+        </tr>
+        <tr id="row4">
+          <td>
+            <dd>P</dd>
+          </td>
+          <td>
+            <dd>Q</dd>
+          </td>
+          <td>
+            <dd>R</dd>
+          </td>
+          <td>
+            <dd>S</dd>
+          </td>
+          <td>
+            <dd>T</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
