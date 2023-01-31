@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="/CSS/normalize.css" />
     <link rel="stylesheet" href="/CSS/stlye.css" />
     <style>
+      dd {
+        font-size: 30px;
+      }
       table,
       td,
       th {
         border: 2px solid purple;
         border-collapse: collapse;
-        padding: 10px;
-        justify-content: center;
-        text-align: center;
+        padding: 50px;
+      }
+
+      th {
+        background: grey;
       }
 
       /* first color in row */
@@ -31,6 +36,9 @@
       #row4 :nth-child(even) {
         background-color: purple;
       }
+      #row5 > td:nth-child(odd) {
+        background-color: darkorange;
+      }
 
       /* second color in row */
       #row1 > td:nth-child(2n) {
@@ -44,6 +52,20 @@
       }
       #row4 > :nth-child(odd) {
         background-color: lime;
+      }
+      #row5 > :nth-child(2n) {
+        background-color: lime;
+      }
+      #row6 > :nth-child(odd) {
+        background-color: lime;
+      }
+
+      #vowel {
+        background-color: skyblue;
+      }
+      #vowel > dd {
+        font-weight: bold;
+        color: green;
       }
     </style>
   </head>
@@ -121,6 +143,31 @@
           </td>
           <td>
             <dd>T</dd>
+          </td>
+        </tr>
+        <tr id="row5">
+          <td>
+            <dd>U</dd>
+          </td>
+          <td>
+            <dd>V</dd>
+          </td>
+          <td>
+            <dd>W</dd>
+          </td>
+          <td>
+            <dd>X</dd>
+          </td>
+          <td>
+            <dd>Y</dd>
+          </td>
+        </tr>
+        <tr id="row6">
+          <td>
+            <dd>Z</dd>
+          </td>
+          <td colspan="4" id="vowel">
+            <dd>Vowel Letters: I, A, E, O, U.</dd>
           </td>
         </tr>
       </tbody>
